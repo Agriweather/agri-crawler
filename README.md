@@ -1,5 +1,5 @@
 # agri-crawler
-農業抓爬資料爬蟲
+台灣農業資料爬蟲
 
 ## 目的
 將台灣政府公開於網站上的農業相關資料獲取與再整理
@@ -24,4 +24,8 @@
 可以詳見本git-repo wiki
 [link]()
 
-## 作者相關資訊
+## 作者資訊
+原始作者：吳振豪 (Wu, Zhen-Hao)
+         DewerZHT
+E-mail: davidwuxp1@gmail.com
+專案開始日期：2018-02-18
