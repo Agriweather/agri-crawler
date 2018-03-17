@@ -1,0 +1,732 @@
+/* start-全網站預設樣試*/
+body
+{
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    text-align: center;
+    background: url(../images/04bg_grid.jpg);
+}
+
+    body a
+    {
+        color: #0065CE;
+        text-decoration: none;
+    }
+
+        body a:visited
+        {
+            color: #0065CE;
+        }
+
+        body a:hover
+        {
+            text-decoration: underline;
+        }
+/* end-全網站預設樣試 */
+
+.container
+{
+    /*全網站*/
+    margin: 0px auto;
+    position: relative;
+    width: 1024px;
+}
+
+.header_search
+{
+    position: absolute;
+    margin: 70px 0px 0 650px;
+}
+
+.header
+{
+    /*標頭  */
+    width: 1024px;
+    margin: 0px auto;
+    text-align: left;
+}
+
+.content
+{
+    /*內容*/
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.subcol
+{
+    /*  左列選單*/
+    text-align: left;
+    /*float: left;*/
+    width: 200px;
+    background-color: white;
+}
+
+    .subcol ul /*左列選單第一層*/
+    {
+        line-height: 22px;
+        list-style-position: outside;
+        margin-left: 0px;
+        padding-left: 15px;
+        list-style: none;
+    }
+
+        .subcol ul li ul /* 左列選單第二層  */
+        {
+            list-style-type: circle;
+            padding-left: 25px;
+        }
+
+.maincol
+{
+    /* 主要顯示內容的部份 */
+    vertical-align: top;
+    width: 800px;
+    float: left;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer
+{
+    /* 頁腳 */
+    width: 1000px;
+    margin: 0px auto;
+}
+
+    .footer .header
+    {
+        /* 頁腳 */
+        width: 1000px;
+        height: 5px;
+        font-size: 1px;
+        background-color: #c2da6a;
+    }
+
+    .footer .contain
+    {
+        text-align: left;
+        vertical-align: middle;
+        width: 1000px;
+        height: 95px;
+        background-color: #dae79f;
+    }
+
+    .footer .footerImg
+    {
+        /* 頁腳圖片 */
+        padding-left: 30px;
+    }
+/*end-後台的排版 */
+
+.default a, .default a:visited /*首頁內容區域的樣式 */
+{
+    color: #333;
+}
+
+/* start-前台版面最上方標題(首頁、關於本站…那一排)*/
+.topMenu a:link
+{
+    color: #000;
+}
+
+.topMenu a:visited
+{
+    color: #000;
+}
+/* end-前台版面最上方標題(首頁、關於本站…那一排)*/
+
+/* start-前台最左方選單(農業法規…)*/
+.leftMenu
+{
+    position: absolute;
+    margin-left: 15px;
+}
+
+    .leftMenu a
+    {
+        text-decoration: none;
+    }
+
+        .leftMenu a:link
+        {
+            color: #000000;
+        }
+
+        .leftMenu a:visited
+        {
+            color: #000000;
+        }
+
+        .leftMenu a:hover
+        {
+            text-decoration: none;
+        }
+/*  end-前台最左方選單(農業法規…)*/
+
+/* start-超連結呈現一般文字*/
+.GeneralText
+{
+    text-decoration: none;
+    color: #000;
+}
+
+    .GeneralText:hover
+    {
+        text-decoration: none;
+        color: #000;
+    }
+/*  end-超連結呈現一般文字*/
+
+
+
+#queryTitle.title /*  各頁的查詢結果標題 */
+{
+    width: 97%;
+    padding: 5px 0 5px 0px;
+    margin-bottom: 1px;
+}
+
+/*  start-置於各頁，背景有橫條的標題 */
+.topLine
+{
+    text-align: center;
+    color: #00502F;
+    background-image: url();
+    background-repeat: repeat-x;
+    background-position: 50% 50%;
+    padding-bottom: 2px;
+    font-weight: bold;
+    width: 97%;
+}
+
+    .topLine span
+    {
+        background-color: White;
+        margin-top: -60px;
+        padding-top: -50px;
+        padding: 5px 5px 5px 5px;
+    }
+/*  end-置於各頁，背景有橫條的標題 */
+
+/*  start-用於查詢介面(例：點選農業法規後出現的查詢介面) */
+.userEdit
+{
+    padding: 0px;
+    width: 97%;
+    text-align: left;
+    border: 0px solid #8b5;
+}
+
+    .userEdit td
+    {
+        border: 0px solid #ccc;
+        border-bottom: 0px dashed #9c6;
+        padding: 4px;
+        line-height: 28px;
+    }
+
+    .userEdit table td
+    {
+        border-bottom: 0px;
+    }
+
+    .userEdit .title
+    {
+        text-align: right;
+        vertical-align: top;
+        width: 47%;
+        white-space: nowrap;
+    }
+
+    .userEdit .button
+    {
+        text-align: center;
+    }
+/*  end-用於查詢介面(例：點選農業法規後出現的查詢介面) */
+
+/* start-用於查詢結果列表介面(例：點選農業法規後，再按查詢所出現的結果列表) */
+.userEditList
+{
+    width: 97%;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.userEditListGv
+{
+    width: 97%;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .userEditList th, .userEditListGv th
+    {
+        padding: 2px;
+    }
+
+.userEditList td
+{
+    padding: 4px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.userEditListGv td
+{
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+    .userEditList td a, .userEditListGv td a
+    {
+        text-decoration: none;
+    }
+
+        .userEditList td a:hover, .userEditListGv td a:hover
+        {
+            text-decoration: underline;
+        }
+
+.userEditList th, .userEditListGv th
+{
+    text-align: left;
+    background-color: #F2F8C9;
+    color: #0F4C06;
+    border: 1px solid #ccc;
+}
+/* end-用於查詢結果列表介面(例：點選農業法規後，再按查詢所出現的結果列表) */
+
+.star /* 用於紅色星號 */
+{
+    color: Red;
+    font-weight: bold;
+}
+
+/* start-巡覽功能*/
+.sitepath
+{
+    color: #006600;
+    font-size: 92%;
+    font-weight: bold;
+}
+
+    .sitepath a
+    {
+        color: #006600;
+        text-decoration: underline;
+    }
+
+        .sitepath a:visited
+        {
+            color: #006600;
+        }
+
+.sitemap a
+{
+    color: #0066CC;
+}
+/* end-巡覽功能*/
+
+/* start-網站地圖頁面 */
+.sitemap a
+{
+    color: #00662C;
+    text-decoration: underline;
+}
+
+    .sitemap a:visited
+    {
+        color: #00662C;
+    }
+
+.sitemap p
+{
+    height: 15px;
+}
+/* end-網站地圖頁面 */
+
+
+
+.view_admin_more
+{
+    width: 97%;
+    text-align: right;
+}
+
+/*  start-用於各頁的詳細內容 */
+.view, .view_admin
+{
+    width: 97%;
+    border-collapse: collapse;
+    border: 1px solid #C8E028;
+    text-align: left;
+    /*padding: 10px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;*/
+}
+
+    .view th, .view_admin th /*表單標題*/
+    {
+        text-align: center;
+        height: 28px;
+        white-space: nowrap;
+        border: 1px solid #C8E028;
+        background-color: #F2F8C9;
+        color: #0F4C06;
+        /*background-color: #E7EBEF;
+	color: #216500;*/
+    }
+
+    .view td, .view_admin td
+    {
+        padding: 3px;
+        border: 1px solid #C8E028;
+        line-height: 28px;
+    }
+
+    .view .title, .view_admin .title
+    {
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: top;
+        width: 15%;
+        border: 1px solid #C8E028;
+        /*background-color: #C8E028;*/
+        color: #216500;
+        /*background-color: #F0F3F5;*/
+    }
+
+    .view_admin .titleNoWidth
+    {
+        font-weight: bold;
+        background-color: #F0F3F5;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: top;
+        color: #216500;
+    }
+
+    .view .mtitle
+    {
+        font-weight: bold;
+        background-color: #F0F3F5;
+        text-align: center;
+        white-space: nowrap;
+        width: 15%;
+        color: #216500;
+    }
+
+    .view_admin td table, .view_admin td table td
+    {
+        border: 0px;
+    }
+
+        .view_admin td table td table td
+        {
+            border: 0px;
+            padding: 0px;
+        }
+/*  end-用於各頁的詳細內容 */
+
+
+.WarningMsg /* 用於各頁的警告訊息 */
+{
+    color: #ff0000;
+    font-size: 125%;
+    background-color: yellow;
+    font-weight: bolder;
+    /*white-space: nowrap;*/
+}
+
+.RemindMsg
+{
+    color: #ff0000;
+}
+
+/* start-後台功能：前台項目選擇單 */
+.MenuItem
+{
+    border-collapse: collapse;
+    border: 0px solid #C8E028;
+    /*filter:alpha(opacity=90);*/ /*支持 IE */
+    /*-moz-opacity:0.60;*/ /*支持 FireFox*/
+    /*opacity:0.90;*/ /*支持 Chrome, Opera, Safari */
+}
+
+    .MenuItem a:visited
+    {
+        color: #006600;
+    }
+
+    .MenuItem th
+    {
+        text-align: center;
+        height: 28px;
+        white-space: nowrap;
+        border: 0px solid #C8E028;
+        background-color: #C8E028;
+        color: #0F4C06;
+    }
+
+    .MenuItem td
+    {
+        padding: 3px;
+        border: 0px solid #C8E028;
+        line-height: 23px;
+        /*text-align: center;*/
+    }
+
+    .MenuItem .title
+    {
+        font-weight: bold;
+        background-color: #FAFBFC;
+        white-space: nowrap;
+        vertical-align: top;
+        width: 15%;
+        padding-left: 24px;
+        width: 80%;
+        text-align: left;
+    }
+
+    .MenuItem .cate
+    {
+        color: #B84041;
+        padding-left: 8px;
+    }
+
+    .MenuItem .botton
+    {
+        text-align: center;
+        padding-left: 0;
+    }
+
+
+
+.auto-style2 /*登記證資料表格設定star*/
+{
+    height: 20px;
+}
+
+.auto-style1 /*左邊第一欄位*/
+{
+    color: rgb(33, 101, 0);
+    font-weight: bold;
+    text-align: center;
+    height: 20px;
+    width: 15%;
+}
+
+.auto-style5 /*申 請 號 碼的欄位 */
+{
+    color: rgb(33, 101, 0);
+    font-weight: bold;
+    text-align: center;
+    height: 20px;
+    width: 130px;
+}
+
+.auto-style6 /*申請號碼之數值的欄位 */
+{
+    height: 20px;
+    width: 160px;
+}
+
+.auto-style3 /*右邊倒數第二個欄位*/
+{
+    color: rgb(33, 101, 0);
+    font-weight: bold;
+    text-align: center;
+    height: 20px;
+    width: 16%;
+}
+
+.auto-style4
+{
+    height: 20px;
+    width: 295px;
+}
+/*登記證資料表格設定end*/
+
+.textRed
+{
+    color: red;
+}
+
+/* 後台功能：前台項目選擇單-結束 */
+.linkbtn_on, .linkbtn_on:visited
+{
+    font-size: 16px;
+    border-radius: 13px 13px 1px 1px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    float: left;
+    line-height: normal;
+    background-color: #476121;
+    border-bottom: 2px solid #BCD2E6;
+    border-top: 1px solid #CDCDCD;
+    border-left: 1px solid #CDCDCD;
+    border-right: 1px solid #CDCDCD;
+    margin: 7px 3px 3px 3px;
+    text-align: center;
+    padding: 8px 3px 8px 3px;
+    text-decoration: none;
+    color: white;
+    /*background: -webkit-gradient(linear,left top,left bottom,from(#476121),to(#709737)); /*因應不同瀏覽器去做漸層的動作* /
+    background: -webkit-linear-gradient(#476121 5%,#709737 100%);
+    background: -moz-linear-gradient(#476121 5%,#709737 100%);
+    background: -o-linear-gradient(#476121 5%,#709737 100%);
+    background: linear-gradient(#476121 5%,#709737 100%);*/
+}
+
+    .linkbtn_on:hover
+    {
+        text-decoration: none;
+    }
+
+.linkbtn, .linkbtn:visited
+{
+    font-size: 16px;
+    border-radius: 13px 13px 1px 1px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    float: left;
+    line-height: normal;
+    background: #EEEEEE;
+    border-bottom: 2px solid #BCD2E6;
+    border-top: 1px solid #CDCDCD;
+    border-left: 1px solid #CDCDCD;
+    border-right: 1px solid #CDCDCD;
+    margin: 7px 3px 3px 3px;
+    text-align: center;
+    padding: 8px 1px 8px 1px;
+    text-decoration: none;
+    color: #7D7D7D;
+}
+
+    .linkbtn:hover
+    {
+        border-radius: 13px 13px 1px 1px;
+        padding: 8px 3px 8px 3px;
+        background-color: #476121;
+        /*background: -webkit-gradient(linear,left top,left bottom,from(#476121),to(#709737)); /*因應不同瀏覽器去做漸層的動作* /
+        background: -webkit-linear-gradient(#476121 5%,#709737 100%);
+        background: -moz-linear-gradient(#476121 5%,#709737 100%);
+        background: -o-linear-gradient(#476121 5%,#709737 100%);
+        background: linear-gradient(#476121 5%,#709737 100%);*/
+        text-decoration: none;
+        border-bottom: 3px solid #668A32;
+        color: white;
+    }
+/*頁籤樣式end*/
+/*目前位置樣式start*/
+.before
+{
+    color: rgb(153, 153, 153);
+    padding-right: 6px;
+    padding-left: 20px;
+    background: url("../images/home.gif") no-repeat scroll left top transparent;
+}
+
+.sitepath
+{
+    color: black;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.path
+{
+    color: black;
+    padding: 10px 0px 8px 0;
+}
+
+.reture
+{
+    border-top: 1px dotted rgb(170, 170, 170);
+    padding-top: 2px;
+    margin-top: 3px;
+    text-align: right;
+}
+/*目前位置樣式end*/
+
+.FunctionButtons
+{
+    text-align: center;
+}
+
+
+input[type=text][disabled], textarea[disabled], select[disabled]
+{
+    background-color: #D3D3D3;
+    color: #000;
+}
+
+input[disabled]
+{
+    background-color: #D3D3D3;
+}
+
+input, select, textarea
+{
+    border: 1px solid #a9a9a9;
+    font-size: 16px;
+}
+
+    input[type=button], input[type=submit]
+    {
+        border-right: #a9a9a9 1px solid;
+        border-top: #a9a9a9 1px solid;
+        border-left: #a9a9a9 1px solid;
+        border-bottom: #a9a9a9 1px solid;
+        padding: 2px 7px 2px 7px;
+        margin: 3px 2px 3px 2px;
+    }
+
+    input[type=text]
+    {
+        border-right: #a9a9a9 1px solid;
+        border-top: #a9a9a9 1px solid;
+        border-left: #a9a9a9 1px solid;
+        border-bottom: #a9a9a9 1px solid;
+        padding: 0px 3px 0px 3px;
+    }
+
+.TabLink
+{
+    padding-right: 10px;
+}
+
+.pager
+{
+    text-align: center;
+    height: 100%;
+}
+
+.EmptyDataRowStyle
+{
+    display: none;
+}
+
+.ui-menu
+{
+    text-align: left;
+}
+
+.ui-autocomplete
+{
+    max-height: 200px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+
+.SelectedRow
+{
+   background-color: #E4E4E4;
+}

@@ -1,0 +1,1331 @@
+<html><head id="head1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+    <script type="text/javascript" src="4-41-1_files/jquery-1.js"></script>
+    <script type="text/javascript" src="4-41-1_files/jquery-ui.js"></script>
+    <script type="text/javascript" src="4-41-1_files/json3.js"></script>
+    <script type="text/javascript" src="4-41-1_files/jquery.js"></script>
+    <script type="text/javascript" src="4-41-1_files/WdatePicker.js"></script><link href="4-41-1_files/WdatePicker.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="4-41-1_files/util.js"></script>
+    <script type="text/javascript" src="4-41-1_files/string.js"></script>
+
+    <script type="text/javascript">
+        function InitMaster() {
+            //單行文字方塊按下enter觸發按鈕事件
+            $("input[type=text]").keypress(function(e) {
+                if (e.keyCode == 13) {
+                    var fbtns = $(".FunctionButtons input[type=submit]");
+                    if (fbtns.length > 0) {
+                        fbtns.first().trigger("click");
+                        return false;
+                    }
+                    else {
+                        return false;
+                    }
+                }
+            });
+
+            var span = $(".ui-dialog-buttonset button span");
+            if ($(span).length > 0) {
+                $(span).parent().focus();
+            }
+        }
+
+        $(document).ready(function() {
+            InitCalendar();
+            InitMaster();
+            RecoverDisabledWebControl();
+        });
+    </script>
+    <title>
+	
+    肥料廠牌查詢
+
+</title><link id="Link1" href="4-41-1_files/style.css" type="text/css" rel="stylesheet"><link id="Link2" href="4-41-1_files/jquery-ui.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        .ui-dialog { margin:0 auto; }
+    </style>
+<script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script><script type="text/javascript">InitCalendar();</script><script type="text/javascript">InitMaster();</script><script type="text/javascript">RecoverDisabledWebControl();</script></head>
+<body style=""><div style="position: absolute; z-index: 19700; top: -1970px; left: -1970px; display: none;"><iframe style="width: 184px; height: 196px;" src="4-41-1_files/My97DatePicker.html" border="0" scrolling="no" frameborder="0"></iframe></div>
+    <form method="post" action="QueryFertBrand.aspx" id="form1">
+<div class="aspNetHidden">
+
+
+
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="4-41-1_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="4-41-1_files/ScriptResource.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax 用戶端架構無法載入。');
+//]]>
+</script>
+
+<script src="4-41-1_files/ScriptResource_002.js" type="text/javascript"></script>
+<script src="4-41-1_files/ScriptResource_002.axd" type="text/javascript"></script>
+<script src="4-41-1_files/ScriptResource_004.axd" type="text/javascript"></script>
+<script src="4-41-1_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="4-41-1_files/ScriptResource_005.axd" type="text/javascript"></script>
+<script src="4-41-1_files/ScriptResource_003.axd" type="text/javascript"></script>
+<script src="4-41-1_files/ScriptResource_006.axd" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	
+	
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['tctl00$Main$UpdatePanel1','Main_UpdatePanel1'], [], [], 3600, 'ctl00');
+//]]>
+</script>
+
+        
+        <table id="container" style="background-color: white;border-collapse:collapse; margin:auto">
+            <tbody><tr>
+                <td>
+                    <div class="container">
+                        <div class="header">
+                            <img id="m_HeaderImage" src="4-41-1_files/top_banner2.jpg" style="width:100%;">
+                        </div>
+                        <div class="content" style="width: 100%">
+                            <table style="width: 100%">
+                                <tbody><tr>
+                                    
+                                    <td class="maincol">
+                                        
+                                        
+    <div><div id="Main_UpdatePanel1">
+
+            <span id="Main_m_Msg"></span>
+            <table class="view">
+                <tbody><tr>
+                    <th>
+                        登記證字號
+                    </th>
+                    <td>
+                        <input name="ctl00$Main$m_RegNo" id="Main_m_RegNo" type="text">
+                    </td>
+                    <th>
+                        廠牌商品名稱
+                    </th>
+                    <td>
+                        <input name="ctl00$Main$m_Brand" id="Main_m_Brand" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        業者名稱
+                    </th>
+                    <td>
+                        <input name="ctl00$Main$m_SupplierName" id="Main_m_SupplierName" type="text">
+                    </td>
+                    <th>
+                        品目名稱
+                    </th>
+                    <td>                        
+                          <select name="ctl00$Main$m_ItemName" id="Main_m_ItemName">
+	<option value="-2">---請選擇---</option>
+	<option value="尿素肥料">1-01-尿素肥料</option>
+	<option value="裹覆尿素肥料">1-02-裹覆尿素肥料</option>
+	<option value="甲醛縮合尿素肥料">1-03-甲醛縮合尿素肥料</option>
+	<option value="丁烯醛縮合尿素肥料">1-04-丁烯醛縮合尿素肥料</option>
+	<option value="異丁醛縮合尿素肥料">1-05-異丁醛縮合尿素肥料</option>
+	<option value="硫酸胍基尿素肥料">1-06-硫酸胍基尿素肥料</option>
+	<option value="硫酸銨肥料">1-07-硫酸銨肥料</option>
+	<option value="腐植酸銨肥料">1-08-腐植酸銨肥料</option>
+	<option value="乙二醯二銨肥料">1-09-乙二醯二銨肥料</option>
+	<option value="氯化銨肥料">1-10-氯化銨肥料</option>
+	<option value="硝酸銨肥料">1-11-硝酸銨肥料</option>
+	<option value="硝酸銨鈣肥料">1-12-硝酸銨鈣肥料</option>
+	<option value="液態尿素硝酸銨肥料">1-13-液態尿素硝酸銨肥料</option>
+	<option value="硝酸鈣肥料">1-14-硝酸鈣肥料</option>
+	<option value="硝酸鈉肥料">1-15-硝酸鈉肥料</option>
+	<option value="氰氮化鈣肥料">1-16-氰氮化鈣肥料</option>
+	<option value="固態副產氮質肥料">1-17-固態副產氮質肥料</option>
+	<option value="液態副產氮質肥料">1-18-液態副產氮質肥料</option>
+	<option value="固態混合氮質肥料">1-19-固態混合氮質肥料</option>
+	<option value="液態混合氮質肥料">1-20-液態混合氮質肥料</option>
+	<option value="過磷酸鈣肥料">2-01-過磷酸鈣肥料</option>
+	<option value="重過磷酸鈣肥料">2-02-重過磷酸鈣肥料</option>
+	<option value="燒製磷肥料">2-03-燒製磷肥料</option>
+	<option value="熔製磷肥料">2-04-熔製磷肥料</option>
+	<option value="腐植酸磷肥料">2-05-腐植酸磷肥料</option>
+	<option value="加工磷質肥料">2-06-加工磷質肥料</option>
+	<option value="副產磷質肥料">2-07-副產磷質肥料</option>
+	<option value="混合磷質肥料">2-08-混合磷質肥料</option>
+	<option value="磷礦粉肥料">2-09-磷礦粉肥料</option>
+	<option value="氯化鉀肥料">3-01-氯化鉀肥料</option>
+	<option value="硫酸鉀肥料">3-02-硫酸鉀肥料</option>
+	<option value="碳酸氫鉀肥料">3-03-碳酸氫鉀肥料</option>
+	<option value="粗製鉀鹽肥料">3-04-粗製鉀鹽肥料</option>
+	<option value="硫酸鉀鎂肥料">3-05-硫酸鉀鎂肥料</option>
+	<option value="腐植酸鉀肥料">3-06-腐植酸鉀肥料</option>
+	<option value="矽酸鉀肥料">3-07-矽酸鉀肥料</option>
+	<option value="加工滷汁鉀肥料">3-08-加工滷汁鉀肥料</option>
+	<option value="副產鉀質肥料">3-09-副產鉀質肥料</option>
+	<option value="混合鉀質肥料">3-10-混合鉀質肥料</option>
+	<option value="硫酸鎂肥料">4-01-硫酸鎂肥料</option>
+	<option value="氫氧化鎂肥料">4-02-氫氧化鎂肥料</option>
+	<option value="氧化鎂肥料">4-03-氧化鎂肥料</option>
+	<option value="腐植酸鎂肥料">4-04-腐植酸鎂肥料</option>
+	<option value="木質磺酸鎂肥料">4-05-木質磺酸鎂肥料</option>
+	<option value="加工鎂質肥料">4-06-加工鎂質肥料</option>
+	<option value="副產鎂質肥料">4-07-副產鎂質肥料</option>
+	<option value="混合鎂質肥料">4-08-混合鎂質肥料</option>
+	<option value="鉗合態鎂肥料">4-09-鉗合態鎂肥料</option>
+	<option value="生石灰肥料">4-10-生石灰肥料</option>
+	<option value="消石灰肥料">4-11-消石灰肥料</option>
+	<option value="碳酸鈣肥料">4-12-碳酸鈣肥料</option>
+	<option value="貝殼粉肥料">4-13-貝殼粉肥料</option>
+	<option value="副產石灰肥料">4-14-副產石灰肥料</option>
+	<option value="混合石灰肥料">4-15-混合石灰肥料</option>
+	<option value="鈣液肥">4-16-鈣液肥</option>
+	<option value="硫酸鈣肥料">4-17-硫酸鈣肥料</option>
+	<option value="白雲石灰肥料">4-18-白雲石灰肥料</option>
+	<option value="白雲石粉肥料">4-19-白雲石粉肥料</option>
+	<option value="矽質石灰石肥料">4-20-矽質石灰石肥料</option>
+	<option value="矽酸爐渣肥料">4-21-矽酸爐渣肥料</option>
+	<option value="硼酸肥料">4-22-硼酸肥料</option>
+	<option value="硼酸鹽肥料">4-23-硼酸鹽肥料</option>
+	<option value="熔製硼質肥料">4-24-熔製硼質肥料</option>
+	<option value="加工硼質肥料">4-25-加工硼質肥料</option>
+	<option value="硫酸錳肥料">4-26-硫酸錳肥料</option>
+	<option value="礦渣錳質肥料">4-27-礦渣錳質肥料</option>
+	<option value="鉗合態錳肥料">4-28-鉗合態錳肥料</option>
+	<option value="加工錳質肥料">4-29-加工錳質肥料</option>
+	<option value="混合錳質肥料">4-30-混合錳質肥料</option>
+	<option value="氧化鋅肥料">4-31-氧化鋅肥料</option>
+	<option value="硫酸鋅肥料">4-32-硫酸鋅肥料</option>
+	<option value="鉗合態鋅肥料">4-33-鉗合態鋅肥料</option>
+	<option value="硫酸亞鐵肥料">4-34-硫酸亞鐵肥料</option>
+	<option value="鉗合態鐵肥料">4-35-鉗合態鐵肥料</option>
+	<option value="鉬酸鈉肥料">4-36-鉬酸鈉肥料</option>
+	<option value="鉗合態銅肥料">4-37-鉗合態銅肥料</option>
+	<option value="熔製微量要素肥料">4-38-熔製微量要素肥料</option>
+	<option value="複合次微量要素肥料">4-39-複合次微量要素肥料</option>
+	<option value="液態複合次微量要素肥料">4-40-液態複合次微量要素肥料</option>
+	<option selected="selected" value="雜項次量微量要素肥料">4-41-雜項次量微量要素肥料</option>
+	<option value="液態雜項次量微量要素肥料">4-42-液態雜項次量微量要素肥料</option>
+	<option value="植物渣粕肥料">5-01-植物渣粕肥料</option>
+	<option value="副產植物質肥料">5-02-副產植物質肥料</option>
+	<option value="魚廢渣肥料">5-03-魚廢渣肥料</option>
+	<option value="動物廢渣肥料">5-04-動物廢渣肥料</option>
+	<option value="副產動物質肥料">5-05-副產動物質肥料</option>
+	<option value="乾燥菌體肥料">5-06-乾燥菌體肥料</option>
+	<option value="氮質海鳥糞肥料">5-07-氮質海鳥糞肥料</option>
+	<option value="禽畜糞加工肥料(此品目已刪除)">5-08-禽畜糞加工肥料(此品目已刪除)</option>
+	<option value="禽畜糞堆肥">5-09-禽畜糞堆肥</option>
+	<option value="一般堆肥">5-10-一般堆肥</option>
+	<option value="雜項堆肥">5-11-雜項堆肥</option>
+	<option value="混合有機質肥料">5-12-混合有機質肥料</option>
+	<option value="雜項有機質肥料">5-13-雜項有機質肥料</option>
+	<option value="液態雜項有機質肥料">5-14-液態雜項有機質肥料</option>
+	<option value="液態有機質肥料">5-15-液態有機質肥料</option>
+	<option value="複合肥料">6-01-複合肥料</option>
+	<option value="裹覆複合肥料">6-02-裹覆複合肥料</option>
+	<option value="家庭園藝用複合肥料">6-03-家庭園藝用複合肥料</option>
+	<option value="化成複合肥料">6-04-化成複合肥料</option>
+	<option value="雜項複合肥料">6-05-雜項複合肥料</option>
+	<option value="液態複合肥料">6-06-液態複合肥料</option>
+	<option value="液態雜項複合肥料">6-07-液態雜項複合肥料</option>
+	<option value="植物生長輔助劑-腐植酸">7-01-植物生長輔助劑-腐植酸</option>
+	<option value="雜項有機質栽培介質">7-02-雜項有機質栽培介質</option>
+	<option value="有機質栽培介質">7-03-有機質栽培介質</option>
+	<option value="豆科根瘤菌肥料">8-01-豆科根瘤菌肥料</option>
+	<option value="游離固氮菌肥料">8-02-游離固氮菌肥料</option>
+	<option value="溶磷菌肥料">8-03-溶磷菌肥料</option>
+	<option value="溶鉀菌肥料">8-04-溶鉀菌肥料</option>
+	<option value="複合微生物肥料">8-05-複合微生物肥料</option>
+	<option value="叢枝菌根菌肥料">8-06-叢枝菌根菌肥料</option>
+	<option value="其他肥料類">9-01-其他肥料類</option>
+
+</select>  
+                    </td>
+                </tr>                
+            </tbody></table>
+            <div class="FunctionButtons">
+                <input name="ctl00$Main$m_Query" value="查詢" id="Main_m_Query" type="submit">
+            </div>
+
+            <div>
+	<table class="view" rules="all" id="Main_m_ResultGrid" style="border-collapse:collapse;" cellspacing="0" border="1">
+		<tbody><tr>
+			<td colspan="9">
+    <div class="pager">
+        共 <span id="Main_m_ResultGrid_TotalCount">390</span> 筆資料，
+        第 <span id="Main_m_ResultGrid_PageIndex">1</span> /
+        <span id="Main_m_ResultGrid_TotalPage">4</span>
+        頁，每頁顯示
+        <select name="ctl00$Main$m_ResultGrid$ctl01$PageSizeList" onchange="javascript:setTimeout('__doPostBack(\'ctl00$Main$m_ResultGrid$ctl01$PageSizeList\',\'\')', 0)" id="Main_m_ResultGrid_PageSizeList">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="30">30</option>
+				<option value="50">50</option>
+				<option selected="selected" value="100">100</option>
+
+			</select>
+        筆&nbsp;&nbsp;
+        
+        &nbsp;到第
+        <input name="ctl00$Main$m_ResultGrid$ctl01$PageIndexTextBox" onchange="javascript:setTimeout('__doPostBack(\'ctl00$Main$m_ResultGrid$ctl01$PageIndexTextBox\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="Main_m_ResultGrid_PageIndexTextBox" title="請輸入頁碼" style="width:40px;" type="text">
+        頁&nbsp;
+        <a id="Main_m_ResultGrid_NextPage" autopostback="True" href="javascript:__doPostBack('ctl00$Main$m_ResultGrid$ctl01$NextPage','')">下一頁</a>
+    </div>    
+</td>
+		</tr><tr>
+			<th scope="col">登記證字號</th><th scope="col">業者名稱</th><th scope="col">廠牌商品名稱</th><th scope="col">品目名稱</th><th scope="col">原料</th><th scope="col">有效日期</th><th scope="col">產地</th><th scope="col">登記成分</th><th scope="col">聯絡資料</th>
+		</tr><tr>
+			<td>進微0006034</td><td>
+                            0006-五葉肥料股份有限公司
+                        </td><td>五葉牌百倍強7號</td><td>4-41-雜項次量微量要素肥料</td><td>無水硫酸鎂、水合物硫酸錳、硼酸、水合物硫酸鋅、無水檸檬酸、嵌合態鈉。990706-原料補正：無水硫酸鎂、水合物硫酸錳、硼酸、水合物硫酸鋅。1010606-原料補正：無水硫酸鎂、硼酸、硫酸錳、硫酸鋅、硫酸銅。</td><td>
+                            109/07/29
+                        </td><td>義大利</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl03$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_0" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl03$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_0" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0006052</td><td>
+                            0006-五葉肥料股份有限公司
+                        </td><td>五葉牌百倍強3號</td><td>4-41-雜項次量微量要素肥料</td><td>磷酸一銨、硝酸鉀、鉗合態銅、鉗合態鋅。</td><td>
+                            109/03/14
+                        </td><td>義大利</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl04$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_1" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl04$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_1" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0013079</td><td>
+                            0013-漢寶工業有限公司
+                        </td><td>農苑牌醫葉蔬</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鎂、硫酸錳、硫酸亞鐵、硫酸鋅、硫酸銅、硼酸。</td><td>
+                            111/04/03
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl05$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_2" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl05$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_2" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0013083</td><td>
+                            0013-漢寶工業有限公司
+                        </td><td>漢寶牌春風4號</td><td>4-41-雜項次量微量要素肥料</td><td>磷酸一鉀、磷酸一銨、硝酸鉀、硫酸鉀、EDTA螯合銅、EDTA螯合鋅。</td><td>
+                            107/11/05
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl06$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_3" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl06$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_3" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0013089</td><td>
+                            0013-漢寶工業有限公司
+                        </td><td>農苑牌葉穩</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鎂、硫酸錳、EDTA錳、硫酸亞鐵、EDTA鐵、硫酸鋅、硫酸銅、硼酸。</td><td>
+                            109/05/18
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl07$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_4" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl07$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_4" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0013091</td><td>
+                            0013-漢寶工業有限公司
+                        </td><td>福臨旺家</td><td>4-41-雜項次量微量要素肥料</td><td>雞骨灰、天然磷礦石、硫酸鉀鎂。</td><td>
+                            110/03/24
+                        </td><td>日本</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl08$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_5" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl08$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_5" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0020049</td><td>
+                            0020-慧春實業股份有限公司
+                        </td><td>慧春 萬友綜合EDTA元素</td><td>4-41-雜項次量微量要素肥料</td><td>EDTA(鎂、錳、鋅、鐵)、水硼、精製硫酸鎂、矽粉(澎鬆劑)。1030710-原料補正：EDTA(鎂、錳、鋅、鐵)、水硼、精製硫酸鎂。</td><td>
+                            107/07/07
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl09$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_6" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl09$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_6" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0020055</td><td>
+                            0020-慧春實業股份有限公司
+                        </td><td>長濱加得寶</td><td>4-41-雜項次量微量要素肥料</td><td>鉗合態錳、鉗合態鈣、鉗合態鎂、氧化鈣、氧化鎂、水硼、維生素、氧化矽。1050719-原料補正：鉗合態錳、鉗合態鈣、鉗合態鎂、氧化鈣、氧化矽、氧化鎂、水硼、維生素B1。</td><td>
+                            109/10/11
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl10$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_7" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl10$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_7" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0020058</td><td>
+                            0020-慧春實業股份有限公司
+                        </td><td>萬友綜合EDTA元素123</td><td>4-41-雜項次量微量要素肥料</td><td>EDTA鎂、EDTA錳、EDTA鋅、EDTA鐵、EDTA銅、水硼、鉬酸、硫酸鎂。</td><td>
+                            110/12/18
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl11$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_8" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl11$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_8" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0020060</td><td>
+                            0020-慧春實業股份有限公司
+                        </td><td>萬特-硼鎂鈣</td><td>4-41-雜項次量微量要素肥料</td><td>水硼、硫酸鎂、氧化鈣、維生素B群。</td><td>
+                            107/10/03
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl12$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_9" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl12$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_9" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0020063</td><td>
+                            0020-慧春實業股份有限公司
+                        </td><td>慧春磷鈣鎂</td><td>4-41-雜項次量微量要素肥料</td><td>碳酸鈣、碳酸鎂、磷礦石。</td><td>
+                            109/03/29
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl13$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_10" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl13$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_10" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0020065</td><td>
+                            0020-慧春實業股份有限公司
+                        </td><td>鈣轉乾坤</td><td>4-41-雜項次量微量要素肥料</td><td>鉗合態錳、鉗合態鈣、氯化鈣、硫酸鎂、水硼、維生素B1、二氧化矽。</td><td>
+                            109/05/12
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl14$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_11" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl14$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_11" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0022022</td><td>
+                            0022-皇國貿易有限公司
+                        </td><td>帆船牌甜脆寶</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鎂、硼酸、硫酸錳、鉗合態銅、鉗合態鋅。</td><td>
+                            107/06/24
+                        </td><td>日本</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl15$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_12" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl15$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_12" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0023023</td><td>
+                            0023-新安農農化工廠
+                        </td><td>綠葉牌愛根</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鎂、硫酸鋅。</td><td>
+                            108/11/17
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl16$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_13" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl16$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_13" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0028121</td><td>
+                            0028-翠筠有限公司
+                        </td><td>升等必達13號</td><td>4-41-雜項次量微量要素肥料</td><td>磷酸二氫鉀、磷酸二氫銨、硝酸鉀、硫酸鉀、硫酸鎂。</td><td>
+                            107/09/25
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl17$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_14" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl17$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_14" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0034043</td><td>
+                            0034-五洲肥料股份有限公司
+                        </td><td>大勝牌四季寶</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鋅、硫酸錳、硫酸鐵、硼酸鎂、硼酸鈉、木質磺酸素。1050906-原料補正：硫酸鋅、硫酸錳、硫酸鐵、硫酸鎂、硼酸鈉、木質磺酸素。</td><td>
+                            107/11/26
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl18$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_15" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl18$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_15" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0034044</td><td>
+                            0034-五洲肥料股份有限公司
+                        </td><td>活力素氨基酸葉面肥</td><td>4-41-雜項次量微量要素肥料</td><td>磷酸一鉀、氨基酸(大豆水解蛋白)、本質磺酸鋅、木質磺酸錳、木質磺酸鈣、硼酸鈉。1040119-原料補正：氨基酸(大豆水解蛋白)、木質磺酸鋅、木質磺酸錳、木質磺酸鈣、硼酸鈉。</td><td>
+                            108/02/24
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl19$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_16" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl19$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_16" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0034045</td><td>
+                            0034-五洲肥料股份有限公司
+                        </td><td>五洲牌葉綠素氨基酸葉面肥</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鋅、硫酸錳、硫酸鎂、硼酸、木質磺酸素。1040119-原料補正：硫酸鋅、硫酸錳、硼酸、木質磺酸素。</td><td>
+                            108/02/24
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl20$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_17" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl20$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_17" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0034052</td><td>
+                            0034-五洲肥料股份有限公司
+                        </td><td>穩當好</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸銅、硫酸鋅、硫酸錳、硫酸鐵、EDTA硼酸、檸檬酸、黃腐酸。</td><td>
+                            107/12/10
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl21$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_18" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl21$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_18" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0047020</td><td>
+                            0047-久農貿易有限公司
+                        </td><td>久農牌安樂肥</td><td>4-41-雜項次量微量要素肥料</td><td>純海藻。</td><td>
+                            107/08/29
+                        </td><td>加拿大</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl22$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_19" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl22$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_19" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0047040</td><td>
+                            0047-久農貿易有限公司
+                        </td><td>金門牌植補元</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鎂、硼酸、硫酸鋅、硫酸錳。</td><td>
+                            107/09/11
+                        </td><td>英國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl23$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_20" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl23$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_20" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0047047</td><td>
+                            0047-久農貿易有限公司
+                        </td><td>金門牌奇美素</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鎂、硫酸錳、硼酸、硫酸鋅、鐵銅鉬之硫酸鹽。1010820-原料補正：硫酸鎂、硫酸錳、硼酸、硫酸鋅、硫酸鐵。</td><td>
+                            109/09/15
+                        </td><td>英國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl24$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_21" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl24$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_21" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0047049</td><td>
+                            0047-久農貿易有限公司
+                        </td><td>奇異牌補冬</td><td>4-41-雜項次量微量要素肥料</td><td>DPTA-
+MN、EDDHMA-FE、EDTA-ZN、CU、MG、硼酸、鉬酸銨。990817-原料補正：硼酸、DPTA-硫酸錳、硫酸鎂、EDTA硫酸鋅以及極
+微量的EDTA硫酸銅、EDDMHA硫酸鐵、鉬酸銨。1030305-1031068542-原料補正：硼酸、DPTA-硫酸錳、硫酸鎂、EDTA硫酸
+鋅。</td><td>
+                            107/06/08
+                        </td><td>義大利</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl25$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_22" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl25$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_22" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0047081</td><td>
+                            0047-久農貿易有限公司
+                        </td><td>樣樣美</td><td>4-41-雜項次量微量要素肥料</td><td>EDTA、硫酸亞鐵、硫酸錳、硫酸鋅、硫酸銅、硼砂、鉬酸銨、硫酸鈷、硫酸鎂。1030403-原料補正：EDTA、硫酸亞鐵、硫酸錳、硫酸鋅、硫酸銅、硼砂、硫酸鎂。</td><td>
+                            107/09/19
+                        </td><td>中國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl26$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_23" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl26$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_23" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0047093</td><td>
+                            0047-久農貿易有限公司
+                        </td><td>特別美</td><td>4-41-雜項次量微量要素肥料</td><td>EDTA、硫酸亞鐵、硫酸錳、硼砂、硫酸鎂。1060623-原料補正：EDTA、硫酸亞鐵、硫酸錳、硼砂、硫酸鎂、硫酸鋅。</td><td>
+                            110/09/25
+                        </td><td>中國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl27$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_24" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl27$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_24" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0052070</td><td>
+                            0052-嘉泰企業股份有限公司
+                        </td><td>倍施特果嶺王232</td><td>4-41-雜項次量微量要素肥料</td><td>亞甲基尿素、磷酸一銨、硫酸鉀、硫酸銅、硫酸亞鐵、硫酸錳、硫酸鋅、硼酸鈉。</td><td>
+                            109/07/19
+                        </td><td>美國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl28$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_25" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl28$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_25" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0052071</td><td>
+                            0052-嘉泰企業股份有限公司
+                        </td><td>倍施特果嶺王823</td><td>4-41-雜項次量微量要素肥料</td><td>亞甲基尿素、尿素、磷酸一銨、硫酸鉀、硫酸銅、硫酸亞鐵、硫酸錳、硫酸鋅、硼酸鈉。</td><td>
+                            109/07/19
+                        </td><td>美國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl29$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_26" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl29$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_26" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0052072</td><td>
+                            0052-嘉泰企業股份有限公司
+                        </td><td>倍施特果嶺王124</td><td>4-41-雜項次量微量要素肥料</td><td>亞甲基尿素、尿素、磷酸一銨、硫酸鉀、硫酸氧鐵、硫酸錳。</td><td>
+                            109/07/19
+                        </td><td>美國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl30$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_27" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl30$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_27" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0053070</td><td>
+                            0053-名方有限公司
+                        </td><td>名方牌鎂甜素</td><td>4-41-雜項次量微量要素肥料</td><td>木質素鎂、木質素錳、木質素鋅、木質素鐵。</td><td>
+                            107/09/02
+                        </td><td>美國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl31$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_28" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl31$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_28" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0053089</td><td>
+                            0053-名方有限公司
+                        </td><td>名方牌鮮艷</td><td>4-41-雜項次量微量要素肥料</td><td>胺基酸(甘胺酸、丙胺酸)、硫酸鎂、硫酸錳、硼酸、EDTA-鐵、硫酸銅、硫酸鋅、鉬酸鈉。</td><td>
+                            110/10/12
+                        </td><td>日本</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl32$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_29" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl32$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_29" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0056026</td><td>
+                            0056-瑞昌化工廠有限公司
+                        </td><td>根寶-綜合微量元素</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鎂、錳、鋅、鉀，鉗合態鐵、鈣、銅，維生素B1，硼酸鈉，鉬酸銨。1011130-原料補正：硫酸鎂、硫酸錳、硫酸鋅、鉗合態鐵、鉗合態鈣、鉗合態錳、維生素B1、硼酸、鉬酸銨。</td><td>
+                            110/01/06
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl33$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_30" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl33$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_30" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0056027</td><td>
+                            0056-瑞昌化工廠有限公司
+                        </td><td>果霸</td><td>4-41-雜項次量微量要素肥料</td><td>磷酸鉀、硝酸鉀、磷酸鈣、鉗合態鈣。1060914-原料補正：磷酸一鉀、硝酸鉀、磷酸一鈣、鉗合態鈣。</td><td>
+                            110/10/29
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl34$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_31" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl34$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_31" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0056029</td><td>
+                            0056-瑞昌化工廠有限公司
+                        </td><td>甜果寶</td><td>4-41-雜項次量微量要素肥料</td><td>磷酸一鉀、硼酸、鉗合態鎂、鉗合態錳、鉗合態鋅、鉗合態鐵、鉗合態鈣。</td><td>
+                            110/11/07
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl35$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_32" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl35$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_32" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0059053</td><td>
+                            0059-台速化工產業廠
+                        </td><td>台速肥-總合素</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸錳、硫酸鋅、硫酸鎂、硫酸銅、硫酸鐵、硼酸鈉、EDTA鈉鹽。</td><td>
+                            108/12/20
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl36$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_33" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl36$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_33" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0059054</td><td>
+                            0059-台速化工產業廠
+                        </td><td>台速肥-佳力生</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸錳、硫酸鋅、硫酸鎂。</td><td>
+                            108/12/20
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl37$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_34" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl37$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_34" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0059055</td><td>
+                            0059-台速化工產業廠
+                        </td><td>台速肥-台果生</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸錳、硫酸鋅、硫酸鎂。</td><td>
+                            108/12/20
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl38$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_35" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl38$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_35" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0059057</td><td>
+                            0059-台速化工產業廠
+                        </td><td>台速肥克達寧</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸錳、硫酸鋅、硫酸鎂、硼酸鈉。</td><td>
+                            108/03/23
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl39$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_36" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl39$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_36" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0061060</td><td>
+                            0061-益欣股份有限公司
+                        </td><td>益欣結果肥 223</td><td>4-41-雜項次量微量要素肥料</td><td>硝酸鉀、磷酸一鉀、磷酸一銨、硫酸銨、尿素。1030916-原料補正：硝酸鉀、磷酸一鉀、磷酸一銨、硫酸銨、尿素、碳酸鈣。</td><td>
+                            107/08/12
+                        </td><td>比利時</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl40$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_37" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl40$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_37" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0061106</td><td>
+                            0061-益欣股份有限公司
+                        </td><td>82硫酸鎂</td><td>4-41-雜項次量微量要素肥料</td><td>天然硫酸鎂礦、硫酸、氯化鉀。</td><td>
+                            108/04/26
+                        </td><td>荷蘭</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl41$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_38" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl41$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_38" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0061128</td><td>
+                            0061-益欣股份有限公司
+                        </td><td>益肥丹132</td><td>4-41-雜項次量微量要素肥料</td><td>硝酸鉀、磷酸銨、磷酸鉀、硫酸鎂、鉗合態鐵、鉗合態錳、鉗合態鋅、鉗合態銅、硼酸。</td><td>
+                            107/09/22
+                        </td><td>加拿大</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl42$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_39" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl42$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_39" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0061144</td><td>
+                            0061-益欣股份有限公司
+                        </td><td>特級補鐵</td><td>4-41-雜項次量微量要素肥料</td><td>氧化鐵、乙二胺四乙酸二鈉鹽、氫氧化鉀。</td><td>
+                            110/04/18
+                        </td><td>波蘭</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl43$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_40" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl43$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_40" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0061145</td><td>
+                            0061-益欣股份有限公司
+                        </td><td>特級補鈣硼</td><td>4-41-雜項次量微量要素肥料</td><td>氧化鈣、乙二胺四乙酸二鈉鹽、硼酸。</td><td>
+                            110/04/18
+                        </td><td>波蘭</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl44$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_41" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl44$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_41" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0061146</td><td>
+                            0061-益欣股份有限公司
+                        </td><td>益肥丹050+</td><td>4-41-雜項次量微量要素肥料</td><td>尿素、磷酸一銨、磷酸一鉀、鉗合態鐵、鉗合態錳、鉗合態鋅、鉗合態銅、硼酸。</td><td>
+                            110/08/22
+                        </td><td>加拿大</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl45$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_42" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl45$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_42" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0061147</td><td>
+                            0061-益欣股份有限公司
+                        </td><td>益肥丹211+</td><td>4-41-雜項次量微量要素肥料</td><td>硝酸鉀、尿素、磷酸一銨、磷酸一鉀、鉗合態鐵、鉗合態錳、鉗合態鋅、鉗合態銅、硼酸。</td><td>
+                            110/08/22
+                        </td><td>加拿大</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl46$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_43" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl46$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_43" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0061148</td><td>
+                            0061-益欣股份有限公司
+                        </td><td>益肥丹222+</td><td>4-41-雜項次量微量要素肥料</td><td>硝酸鉀、尿素、磷酸一銨、鉗合態鐵、鉗合態錳、鉗合態鋅、鉗合態銅、硼酸。</td><td>
+                            110/08/22
+                        </td><td>加拿大</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl47$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_44" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl47$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_44" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0061149</td><td>
+                            0061-益欣股份有限公司
+                        </td><td>益肥丹311</td><td>4-41-雜項次量微量要素肥料</td><td>硝酸鉀、尿素、磷酸一銨、鉗合態鐵、鉗合態鋅、鉗合態銅。</td><td>
+                            110/11/13
+                        </td><td>加拿大</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl48$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_45" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl48$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_45" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0062045</td><td>
+                            0062-特欣股份有限公司
+                        </td><td>特欣特磷鉀</td><td>4-41-雜項次量微量要素肥料</td><td>磷礦石、氯化鉀、磷酸、硫酸。</td><td>
+                            108/04/22
+                        </td><td>以色列</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl49$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_46" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl49$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_46" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0062079</td><td>
+                            0062-特欣股份有限公司
+                        </td><td>硝天下</td><td>4-41-雜項次量微量要素肥料</td><td>硝酸、氧化鎂</td><td>
+                            108/02/26
+                        </td><td>中國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl50$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_47" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl50$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_47" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0062089</td><td>
+                            0062-特欣股份有限公司
+                        </td><td>特欣牌磷酸二鈣</td><td>4-41-雜項次量微量要素肥料</td><td>60%濃度磷酸、石灰石礦粉。</td><td>
+                            108/08/23
+                        </td><td>中國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl51$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_48" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl51$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_48" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0062090</td><td>
+                            0062-特欣股份有限公司
+                        </td><td>特欣牌磷酸一鈣</td><td>4-41-雜項次量微量要素肥料</td><td>65%濃度磷酸、磷酸二鈣。</td><td>
+                            108/08/23
+                        </td><td>中國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl52$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_49" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl52$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_49" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0062102</td><td>
+                            0062-特欣股份有限公司
+                        </td><td>錳尚肥</td><td>4-41-雜項次量微量要素肥料</td><td>磷酸一銨、硫酸鉀、硫酸鎂、硫酸錳、硼酸、硫酸銅。</td><td>
+                            108/10/23
+                        </td><td>荷蘭</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl53$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_50" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl53$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_50" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0068010</td><td>
+                            0068-應群實業有限公司
+                        </td><td>國鼎牌綠滿園</td><td>4-41-雜項次量微量要素肥料</td><td>乙二胺四乙酸、氧化錳、氧化鋅、硫酸鎂、硼酸。1050418-原料補正：無水硫酸鎂、水硼、EDTA銅、EDTA鐵、EDTA錳、EDTA鋅、葡萄糖、檸檬酸。</td><td>
+                            110/05/28
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl54$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_51" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl54$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_51" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0068046</td><td>
+                            0068-應群實業有限公司
+                        </td><td>金鷹牌威寶</td><td>4-41-雜項次量微量要素肥料</td><td>木質磺酸、氧化錳、氧化鋅、硫酸錳、硼酸。</td><td>
+                            108/11/24
+                        </td><td>義大利</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl55$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_52" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl55$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_52" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0068063</td><td>
+                            0068-應群實業有限公司
+                        </td><td>金鷹牌好綠二號</td><td>4-41-雜項次量微量要素肥料</td><td>磷酸一鈣、磷酸一鉀、硫酸鎂、硫酸錳、硼酸、乙二胺四乙酸-鐵、乙二胺四乙酸-銅、乙二胺四乙酸-鋅、鉬酸銨。</td><td>
+                            109/06/02
+                        </td><td>日本</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl56$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_53" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl56$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_53" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0068097</td><td>
+                            0068-應群實業有限公司
+                        </td><td>金鷹牌雷力補</td><td>4-41-雜項次量微量要素肥料</td><td>海藻、鎂礦粉、鐵粉、風化煤、黏合劑。1031112-原料補正：海藻、鎂礦粉。</td><td>
+                            107/12/14
+                        </td><td>中國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl57$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_54" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl57$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_54" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0068118</td><td>
+                            0068-應群實業有限公司
+                        </td><td>金鷹牌鈣元素</td><td>4-41-雜項次量微量要素肥料</td><td>氧化鈣、木質素、硼砂。</td><td>
+                            107/12/07
+                        </td><td>義大利</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl58$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_55" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl58$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_55" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0068120</td><td>
+                            0068-應群實業有限公司
+                        </td><td>金鷹牌普多生</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鎂、硼酸、EDTA銅、EDTA鐵、EDTA錳、EDTA鋅、鉬酸鈉。</td><td>
+                            108/10/27
+                        </td><td>義大利</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl59$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_56" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl59$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_56" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0068121</td><td>
+                            0068-應群實業有限公司
+                        </td><td>金鷹牌粉透透</td><td>4-41-雜項次量微量要素肥料</td><td>二氧化矽、碳酸鈣。</td><td>
+                            109/01/13
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl60$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_57" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl60$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_57" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0068123</td><td>
+                            0068-應群實業有限公司
+                        </td><td>金鷹牌葉果美</td><td>4-41-雜項次量微量要素肥料</td><td>無水硫酸鎂、無水硫酸錳、無水硫酸鋅、硼酸、維生素、檸檬酸、菸鹼醯胺、黃腐酸。</td><td>
+                            109/05/25
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl61$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_58" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl61$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_58" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0068127</td><td>
+                            0068-應群實業有限公司
+                        </td><td>金鷹牌粒粒補</td><td>4-41-雜項次量微量要素肥料</td><td>乙二胺四乙酸、氧化錳、氧化鋅、硫酸鎂、硼酸。1050909-原料補正：乙二胺四乙酸、氧化錳、氧化鋅、硫酸鎂、硼酸、氧化銅。</td><td>
+                            109/11/02
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl62$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_59" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl62$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_59" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0068134</td><td>
+                            0068-應群實業有限公司
+                        </td><td>金鷹牌金藍美丹222</td><td>4-41-雜項次量微量要素肥料</td><td>磷酸二氫鉀、硝酸鉀、磷酸二氫銨、尿素、EDTA銅、EDTA鋅。</td><td>
+                            107/06/27
+                        </td><td>義大利</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl63$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_60" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl63$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_60" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0068135</td><td>
+                            0068-應群實業有限公司
+                        </td><td>金鷹牌金藍美丹311</td><td>4-41-雜項次量微量要素肥料</td><td>尿素、硫酸銨、磷酸銨、硝酸鉀、EDTA銅、EDTA鋅。1061123-原料補正：尿素、硫酸銨、磷酸一銨、硝酸鉀、EDTA銅、EDTA鋅。</td><td>
+                            107/06/27
+                        </td><td>義大利</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl64$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_61" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl64$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_61" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0068136</td><td>
+                            0068-應群實業有限公司
+                        </td><td>金鷹牌金藍美丹151</td><td>4-41-雜項次量微量要素肥料</td><td>磷酸鉀、磷酸銨、尿素、EDTA銅、EDTA鋅。1060927-原料補正：磷酸一鉀、磷酸二銨、尿素、EDTA銅、EDTA鋅。</td><td>
+                            107/07/11
+                        </td><td>義大利</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl65$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_62" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl65$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_62" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0068140</td><td>
+                            0068-應群實業有限公司
+                        </td><td>金鷹牌金藍美丹514</td><td>4-41-雜項次量微量要素肥料</td><td>硝酸鉀、磷酸鉀、硫酸鉀、EDTA銅、EDTA鋅。1061123-原料補正：硝酸鉀、磷酸一鉀、硫酸鉀、EDTA銅、EDTA鋅。</td><td>
+                            107/09/25
+                        </td><td>義大利</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl66$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_63" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl66$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_63" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0070041</td><td>
+                            0070-凱皇農化股份有限公司
+                        </td><td>佳甜靈</td><td>4-41-雜項次量微量要素肥料</td><td>磷酸一鉀、鉗合態(鎂、錳、鐵、鋅、鈣)、硼酸。</td><td>
+                            109/03/14
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl67$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_64" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl67$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_64" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0070043</td><td>
+                            0070-凱皇農化股份有限公司
+                        </td><td>可來得</td><td>4-41-雜項次量微量要素肥料</td><td>磷酸、氫氧化鈣、磷酸一鉀。</td><td>
+                            109/03/14
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl68$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_65" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl68$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_65" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0077012</td><td>
+                            0077-安妥工業股份有限公司
+                        </td><td>福青</td><td>4-41-雜項次量微量要素肥料</td><td>氧化鎂、錳、硼、鋅。1000503-原料補正：氧化鎂、EDTA鋅、EDTA錳、硼酸。</td><td>
+                            108/07/19
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl69$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_66" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl69$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_66" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0077031</td><td>
+                            0077-安妥工業股份有限公司
+                        </td><td>保粒優</td><td>4-41-雜項次量微量要素肥料</td><td>碳酸鈣、二氧化矽。</td><td>
+                            110/03/26
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl70$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_67" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl70$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_67" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0077034</td><td>
+                            0077-安妥工業股份有限公司
+                        </td><td>護粒果</td><td>4-41-雜項次量微量要素肥料</td><td>碳酸鈣、二氧化矽。</td><td>
+                            110/05/24
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl71$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_68" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl71$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_68" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0077037</td><td>
+                            0077-安妥工業股份有限公司
+                        </td><td>固皮衫</td><td>4-41-雜項次量微量要素肥料</td><td>二氧化矽、碳酸鈣。</td><td>
+                            111/01/10
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl72$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_69" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl72$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_69" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0077050</td><td>
+                            0077-安妥工業股份有限公司
+                        </td><td>安妥-根多多</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鎂、EDTA錳、EDTA鋅、水硼</td><td>
+                            108/08/17
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl73$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_70" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl73$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_70" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0077051</td><td>
+                            0077-安妥工業股份有限公司
+                        </td><td>色界</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鉀、硫酸鎂、水硼、硫酸錳</td><td>
+                            108/11/29
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl74$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_71" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl74$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_71" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0077072</td><td>
+                            0077-安妥工業股份有限公司
+                        </td><td>SH．加量土壤添加物</td><td>4-41-雜項次量微量要素肥料</td><td>尿素、硝酸鉀、貝殼粉、氫氧化鈣、氫氧化鎂。</td><td>
+                            107/12/15
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl75$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_72" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl75$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_72" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0077073</td><td>
+                            0077-安妥工業股份有限公司
+                        </td><td>安農肥</td><td>4-41-雜項次量微量要素肥料</td><td>東農牌高級有機質肥料(肥製(質)字第0042003號)、尿素、硝酸鉀、貝殼粉、氫氧化鈣、氫氧化鎂。</td><td>
+                            108/05/20
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl76$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_73" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl76$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_73" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0077078</td><td>
+                            0077-安妥工業股份有限公司
+                        </td><td>金榮寶</td><td>4-41-雜項次量微量要素肥料</td><td>硝酸鉀、磷酸一鉀、硫酸鎂、硫酸鋅。</td><td>
+                            110/04/24
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl77$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_74" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl77$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_74" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0079024</td><td>
+                            0079-惠光股份有限公司
+                        </td><td>惠光牌惠光加倍生</td><td>4-41-雜項次量微量要素肥料</td><td>氧化鎂、硫酸鋅、硼酸、硫酸鐵、氯化錳、乳糖、玉米粉、二氧化矽。1030502-原料補正：氧化鎂、硫酸鋅、硼酸、硫酸鐵、乳糖、玉米粉。</td><td>
+                            111/05/06
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl78$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_75" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl78$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_75" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0079025</td><td>
+                            0079-惠光股份有限公司
+                        </td><td>惠光牌惠光旺寶</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸銅、硫酸鎂、硫酸鋅、硼酸、硫酸亞鐵、乳糖、玉米粉。</td><td>
+                            109/11/15
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl79$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_76" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl79$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_76" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0079027</td><td>
+                            0079-惠光股份有限公司
+                        </td><td>肥友</td><td>4-41-雜項次量微量要素肥料</td><td>尿素、硫酸鎂、硼酸、滑石粉、膨潤土、玉米粉。</td><td>
+                            110/12/27
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl80$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_77" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl80$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_77" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0085056</td><td>
+                            0085-福壽實業股份有限公司
+                        </td><td>福壽牌真正肥7號綜合微量元素</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鎂、硫酸銅、硼酸、硫酸鋅、硫酸錳、EDTA-鐵、鉬酸銨。</td><td>
+                            107/12/31
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl81$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_78" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl81$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_78" type="submit">
+                        </td>
+		</tr><tr>
+			<td>製微0093177</td><td>
+                            0093-興農股份有限公司
+                        </td><td>興農牌綠源1號</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鎂、乙二胺四乙酸錳、硼酸、乙二胺四乙酸鋅、乙二胺四乙酸銅、乙二胺四乙酸鐵。</td><td>
+                            107/04/27
+                        </td><td>臺灣</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl82$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_79" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl82$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_79" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0097016</td><td>
+                            0097-易利特開發有限公司
+                        </td><td>鎂錳成珍</td><td>4-41-雜項次量微量要素肥料</td><td>碳酸鈣、氧化鎂、氧化鐵、碳酸錳、氧化鋅、碳酸銅、氧化鈷、四硼酸鈉、鉬酸鈉。</td><td>
+                            108/03/04
+                        </td><td>泰國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl83$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_80" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl83$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_80" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0099022</td><td>
+                            0099-正煌有限公司
+                        </td><td>正煌牌利伯爾-綜合26</td><td>4-41-雜項次量微量要素肥料</td><td>氫氧化鈉溶液、螯合劑(乙二胺四乙酸二鈉鹽)、碳酸銅、八硼酸二鈉、乙二胺四乙酸鐵鈉、硫酸鎂、碳酸錳、鉬酸鈉、硫酸鈉、氧化鋅。</td><td>
+                            108/04/28
+                        </td><td>英國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl84$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_81" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl84$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_81" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0099025</td><td>
+                            0099-正煌有限公司
+                        </td><td>正煌牌利伯爾-綜合低成分</td><td>4-41-雜項次量微量要素肥料</td><td>乙二銨四乙酸四鈉、乙二胺四乙酸鐵鈉、碳酸錳、碳酸銅、氧化鋅、鉬酸鈉、硼酸鈉、氫氧化鈉溶液、硫酸鈉。</td><td>
+                            108/07/31
+                        </td><td>印度</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl85$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_82" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl85$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_82" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0099031</td><td>
+                            0099-正煌有限公司
+                        </td><td>正煌牌利伯爾-綜合</td><td>4-41-雜項次量微量要素肥料</td><td>螯合劑(乙二胺四乙酸二鈉鹽)、五水硫酸銅、八硼酸二鈉、乙二胺四乙酸鐵鈉、硫酸鐵溶液、硫酸錳、鉬酸鈉、硫酸鈉、七水硫酸鋅。</td><td>
+                            109/08/17
+                        </td><td>英國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl86$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_83" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl86$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_83" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0099036</td><td>
+                            0099-正煌有限公司
+                        </td><td>弗利克爾綜合8</td><td>4-41-雜項次量微量要素肥料</td><td>EDTA酸、氧化鋅、氧化鐵、鹼性碳酸銅、碳酸錳、氫氧化鈉、硼酸、鉬酸鈉、硫酸鈉。</td><td>
+                            110/08/18
+                        </td><td>阿根廷</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl87$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_84" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl87$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_84" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0099037</td><td>
+                            0099-正煌有限公司
+                        </td><td>弗利克爾綜合9</td><td>4-41-雜項次量微量要素肥料</td><td>EDTA酸、氧化鋅、氧化鐵、鹼性碳酸銅、碳酸錳、硫酸鎂、氫氧化鈉、鉬酸鈉、硫酸鈉。</td><td>
+                            110/08/18
+                        </td><td>阿根廷</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl88$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_85" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl88$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_85" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0110047</td><td>
+                            0110-台和園藝企業股份有限公司
+                        </td><td>新百得肥一號</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鎂、硝酸鉀、磷酸鉀。990907-原料補正：硫酸鎂、硝酸鉀、磷酸鉀、螯合態銅。</td><td>
+                            107/08/04
+                        </td><td>美國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl89$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_86" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl89$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_86" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0110050</td><td>
+                            0110-台和園藝企業股份有限公司
+                        </td><td>新百得肥十二號</td><td>4-41-雜項次量微量要素肥料</td><td>尿素、磷酸鉀、硝酸鉀。990907-原料補正：尿素、磷酸鉀、硝酸鉀、螯合態鋅。</td><td>
+                            107/08/08
+                        </td><td>美國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl90$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_87" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl90$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_87" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0110051</td><td>
+                            0110-台和園藝企業股份有限公司
+                        </td><td>新百得肥五號</td><td>4-41-雜項次量微量要素肥料</td><td>尿素、磷酸銨、硝酸鉀、硫酸鎂、硼酸、螯合態錳、螯合態鋅。990907-原料補正：尿素、磷酸銨、硝酸鉀、硫酸鎂、硼酸、螯合態錳、螯合態鋅、螯合態銅。</td><td>
+                            107/08/23
+                        </td><td>美國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl91$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_88" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl91$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_88" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0110052</td><td>
+                            0110-台和園藝企業股份有限公司
+                        </td><td>新百得肥六號</td><td>4-41-雜項次量微量要素肥料</td><td>硝酸鉀、硝酸銨、磷酸鉀、硫酸鎂。1000426-原料補正：硝酸鉀、硝酸銨、磷酸鉀、硫酸鎂、螯合態鋅。</td><td>
+                            108/07/18
+                        </td><td>美國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl92$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_89" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl92$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_89" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0110056</td><td>
+                            0110-台和園藝企業股份有限公司
+                        </td><td>好康多牌新好康多S101號</td><td>4-41-雜項次量微量要素肥料</td><td>硝酸、磷酸液、硫酸鉀、硫酸鎂、氨水、硼酸鈉、硫酸錳、硫酸鋅、硫酸銅。</td><td>
+                            109/04/10
+                        </td><td>日本</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl93$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_90" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl93$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_90" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0110057</td><td>
+                            0110-台和園藝企業股份有限公司
+                        </td><td>好康多牌新好康多S103號</td><td>4-41-雜項次量微量要素肥料</td><td>硝酸、磷酸液、硫酸鉀、硫酸鎂、氨水、硼酸鈉、硫酸錳、硫酸鋅、硫酸銅。</td><td>
+                            109/04/10
+                        </td><td>日本</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl94$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_91" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl94$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_91" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0110058</td><td>
+                            0110-台和園藝企業股份有限公司
+                        </td><td>好康多牌新超微粒好康多A</td><td>4-41-雜項次量微量要素肥料</td><td>硝酸、磷酸液、硫酸鉀、硫酸鎂、氨水、硼酸鈉、硫酸錳、硫酸鋅、硫酸銅。</td><td>
+                            109/04/10
+                        </td><td>日本</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl95$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_92" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl95$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_92" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0115021</td><td>
+                            0115-伍維貿易有限公司
+                        </td><td>果魔牌四號大肥丹</td><td>4-41-雜項次量微量要素肥料</td><td>硝酸銨、尿素、磷酸一銨、硝酸鉀、硫酸鉀。1031217-原料補正：硝酸銨、尿素、磷酸一銨、硝酸鉀、硫酸鉀、硫酸鋅。</td><td>
+                            108/03/17
+                        </td><td>美國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl96$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_93" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl96$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_93" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0115093</td><td>
+                            0115-伍維貿易有限公司
+                        </td><td>倍康可</td><td>4-41-雜項次量微量要素肥料</td><td>尿素、磷礦、硫酸、氯化鉀。</td><td>
+                            107/09/07
+                        </td><td>越南</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl97$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_94" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl97$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_94" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0115094</td><td>
+                            0115-伍維貿易有限公司
+                        </td><td>愛禮士牌農維他一號</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鋅、硫酸鐵、硫酸錳、硼酸、硫酸鎂、螯合劑(EDTA)。</td><td>
+                            107/11/04
+                        </td><td>印度</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl98$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_95" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl98$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_95" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0115095</td><td>
+                            0115-伍維貿易有限公司
+                        </td><td>富豪牌三葉肥植精</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸亞鐵、氧化鋅、氧化錳、硼酸。</td><td>
+                            107/12/06
+                        </td><td>美國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl99$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_96" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl99$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_96" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0115096</td><td>
+                            0115-伍維貿易有限公司
+                        </td><td>富豪牌三葉榮養素</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸亞鐵、氧化鋅、氧化錳、鉬酸銨、氧化鎂、硼酸、木質酸。1031021-原料補正：硫酸亞鐵、氧化鋅、氧化錳、氧化鎂、硼酸、木質酸。</td><td>
+                            107/12/29
+                        </td><td>美國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl100$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_97" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl100$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_97" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0115098</td><td>
+                            0115-伍維貿易有限公司
+                        </td><td>愛禮士牌農維他二號</td><td>4-41-雜項次量微量要素肥料</td><td>七水硫酸亞鐵、單水硫酸錳、單水硫酸鋅、五水硫酸銅、七水硫酸鎂、硼酸。</td><td>
+                            108/10/05
+                        </td><td>印度</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl101$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_98" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl101$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_98" type="submit">
+                        </td>
+		</tr><tr>
+			<td>進微0115101</td><td>
+                            0115-伍維貿易有限公司
+                        </td><td>生寶牌粒粒美</td><td>4-41-雜項次量微量要素肥料</td><td>硫酸鐵、硫酸錳、硫酸銅、硫酸鋅、硼砂。</td><td>
+                            111/02/06
+                        </td><td>美國</td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl102$m_ShowComposition" value="顯示" id="Main_m_ResultGrid_m_ShowComposition_99" type="submit">
+                        </td><td>
+                            <input name="ctl00$Main$m_ResultGrid$ctl102$m_ShowContact" value="顯示" id="Main_m_ResultGrid_m_ShowContact_99" type="submit">
+                        </td>
+		</tr>
+	</tbody></table>
+</div>
+            
+        </div></div>
+
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                        <div>
+                            <img id="m_FooterImage" class="footerImg" src="4-41-1_files/footer_banner.png" style="width:100%;">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody></table>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+InitCalendar();InitMaster();RecoverDisabledWebControl();Sys.Application.add_init(function()
+ {
+    $create(AjaxControlToolkit.Animation.UpdatePanelAnimationBehavior, 
+{"OnUpdated":"{\"AnimationName\":\"Parallel\",\"duration\":\"0\",\"AnimationChildren\":[{\"AnimationName\":\"ScriptAction\",\"script\":\"ajaxStop();\",\"AnimationChildren\":[]}]}","OnUpdating":"{\"AnimationName\":\"Parallel\",\"duration\":\"0\",\"AnimationChildren\":[{\"AnimationName\":\"ScriptAction\",\"script\":\"ajaxStart();\",\"AnimationChildren\":[]}]}","id":"Main_ctl01"},
+ null, null, $get("Main_UpdatePanel1"));
+});
+//]]>
+</script>
+<span style="display: none !important;"><input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden"></span><span style="display: none !important;"><input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden"></span><span style="display: none !important;"><input name="__LASTFOCUS" id="__LASTFOCUS" value="" type="hidden"></span><span style="display: none !important;"><input name="__VIEWSTATE" id="__VIEWSTATE" value="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5p6d6I+M5qC56I+M6IKl5paZFDktMDEt5YW25LuW6IKl5paZ6aGeFXICLTIM5bC/57Sg6IKl5paZEuijueimhuWwv+e0oOiCpeaWmRjnlLLphpvnuK7lkIjlsL/ntKDogqXmlpkb5LiB54Ov6Yab57iu5ZCI5bC/57Sg6IKl5paZG+eVsOS4gemGm+e4ruWQiOWwv+e0oOiCpeaWmRjnoavphbjog43ln7rlsL/ntKDogqXmlpkP56Gr6YW46Yqo6IKl5paZEuiFkOakjemFuOmKqOiCpeaWmRXkuZnkuozphq/kuozpiqjogqXmlpkP5rCv5YyW6Yqo6IKl5paZD+ehnemFuOmKqOiCpeaWmRLnoZ3phbjpiqjpiKPogqXmlpkb5ray5oWL5bC/57Sg56Gd6YW46Yqo6IKl5paZD+ehnemFuOmIo+iCpeaWmQ/noZ3phbjpiInogqXmlpkS5rCw5rCu5YyW6Yij6IKl5paZGOWbuuaFi+WJr+eUouawruizquiCpeaWmRjmtrLmhYvlia/nlKLmsK7os6rogqXmlpkY5Zu65oWL5re35ZCI5rCu6LOq6IKl5paZGOa2suaFi+a3t+WQiOawruizquiCpeaWmRLpgY7no7fphbjpiKPogqXmlpkV6YeN6YGO56O36YW46Yij6IKl5paZD+eHkuijveejt+iCpeaWmQ/nhpToo73no7fogqXmlpkS6IWQ5qSN6YW456O36IKl5paZEuWKoOW3peejt+izquiCpeaWmRLlia/nlKLno7fos6rogqXmlpkS5re35ZCI56O36LOq6IKl5paZD+ejt+ekpueyieiCpeaWmQ/msK/ljJbpiYDogqXmlpkP56Gr6YW46YmA6IKl5paZEueis+mFuOawq+mJgOiCpeaWmRLnspfoo73piYDpub3ogqXmlpkS56Gr6YW46YmA6Y6C6IKl5paZEuiFkOakjemFuOmJgOiCpeaWmQ/nn73phbjpiYDogqXmlpkV5Yqg5bel5ru35rGB6YmA6IKl5paZEuWJr+eUoumJgOizquiCpeaWmRLmt7flkIjpiYDos6rogqXmlpkP56Gr6YW46Y6C6IKl5paZEuawq+awp+WMlumOguiCpeaWmQ/msKfljJbpjoLogqXmlpkS6IWQ5qSN6YW46Y6C6IKl5paZFeacqOizquejuumFuOmOguiCpeaWmRLliqDlt6XpjoLos6rogqXmlpkS5Ymv55Si6Y6C6LOq6IKl5paZEua3t+WQiOmOguizquiCpeaWmRLpiZflkIjmhYvpjoLogqXmlpkP55Sf55+z54Gw6IKl5paZD+a2iOefs+eBsOiCpeaWmQ/norPphbjpiKPogqXmlpkP6LKd5q6857KJ6IKl5paZEuWJr+eUouefs+eBsOiCpeaWmRLmt7flkIjnn7PngbDogqXmlpkJ6Yij5ray6IKlD+ehq+mFuOmIo+iCpeaWmRLnmb3pm7Lnn7PngbDogqXmlpkS55m96Zuy55+z57KJ6IKl5paZFeefveizquefs+eBsOefs+iCpeaWmRLnn73phbjniJDmuKPogqXmlpkM56G86YW46IKl5paZD+ehvOmFuOm5veiCpeaWmRLnhpToo73nobzos6rogqXmlpkS5Yqg5bel56G86LOq6IKl5paZD+ehq+mFuOmMs+iCpeaWmRLnpKbmuKPpjLPos6rogqXmlpkS6YmX5ZCI5oWL6Yyz6IKl5paZEuWKoOW3pemMs+izquiCpeaWmRLmt7flkIjpjLPos6rogqXmlpkP5rCn5YyW6YuF6IKl5paZD+ehq+mFuOmLheiCpeaWmRLpiZflkIjmhYvpi4XogqXmlpkS56Gr6YW45Lqe6ZC16IKl5paZEumJl+WQiOaFi+mQteiCpeaWmQ/piazphbjpiInogqXmlpkS6YmX5ZCI5oWL6YqF6IKl5paZGOeGlOijveW+rumHj+imgee0oOiCpeaWmRvopIflkIjmrKHlvq7ph4/opoHntKDogqXmlpkh5ray5oWL6KSH5ZCI5qyh5b6u6YeP6KaB57Sg6IKl5paZHumbnOmgheasoemHj+W+rumHj+imgee0oOiCpeaWmSTmtrLmhYvpm5zpoIXmrKHph4/lvq7ph4/opoHntKDogqXmlpkS5qSN54mp5rij57KV6IKl5paZFeWJr+eUouakjeeJqeizquiCpeaWmQ/prZrlu6LmuKPogqXmlpkS5YuV54mp5bui5rij6IKl5paZFeWJr+eUouWLleeJqeizquiCpeaWmRLkub7nh6Xoj4zpq5TogqXmlpkV5rCu6LOq5rW36bOl57Oe6IKl5paZKeemveeVnOeznuWKoOW3peiCpeaWmSjmraTlk4Hn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" type="hidden"></span><span style="display: none !important;"><input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="40F0AB1E" type="hidden"></span><span style="display: none !important;"><input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" type="hidden"></span></form>    
+
+
+</body></html>
